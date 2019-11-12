@@ -45,9 +45,14 @@ export default class Main extends Component {
     try {
       const { newRepo, repositories } = this.state;
 
-      if (newRepo === '') throw new Error('informe um repositorio');
+      if (newRepo === '') {
+        throw new Error('informe um repositorio');
+      }
       const response = await api.get(`/repos/${newRepo}`);
 
+      const verifyHepo = repositories.find(r => r.name === newRepo);
+
+      if (verifyHepo) throw new Error('Repositório duplicado');
       const data = {
         name: response.data.full_name,
       };
@@ -59,6 +64,8 @@ export default class Main extends Component {
       });
     } catch (error) {
       this.setState({ error: true });
+    } finally {
+      this.setState({ loading: true });
     }
   };
 
@@ -79,7 +86,7 @@ export default class Main extends Component {
             onChange={this.handleInputChange}
           />
 
-          <SubmitButton loading={loading}>
+          <SubmitButton loading={loading ? 1 : 0}>
             {loading ? (
               <FaSpinner color="#fff" size={15} />
             ) : (

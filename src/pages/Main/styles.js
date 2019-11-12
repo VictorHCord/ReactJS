@@ -24,13 +24,12 @@ export const Form = styled.form.attrs(props => ({
 `;
 
 const rotate = keyframes`
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+    from{
+        transform:rotate(0deg)
+    }
+    to{
+        transform:rotate(3600deg);
+    }
 `;
 
 export const SubmitButton = styled.button.attrs(props => ({
