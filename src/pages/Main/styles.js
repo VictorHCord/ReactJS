@@ -18,7 +18,7 @@ export const Form = styled.form.attrs(props => ({
     props.error &&
     css`
       input {
-        border: 1px solid red;
+        border: 1px solid #ff0000;
       }
     `}
 `;
@@ -81,4 +81,14 @@ export const List = styled.ul`
       text-decoration: none;
     }
   }
+`;
+
+export const Error = styled.p`
+  font-size: 16px;
+  color: #ff0000;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
 `;
