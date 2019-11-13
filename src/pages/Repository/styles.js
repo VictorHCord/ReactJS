@@ -99,3 +99,41 @@ export const IssueList = styled.ul`
     }
   }
 `;
+
+export const PageActions = styled.div`
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+
+  span {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  button {
+    margin: 0 15px 30px 15px;
+    padding: 15px;
+    background: #3c4556;
+    color: #eee;
+    border: 1px solid #eee;
+    border-radius: 15px;
+  }
+`;
+
+export const IssueFilter = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+
+  button {
+    margin: 0 15px 30px 15px;
+    padding: 15px;
+    background: #3c4556;
+    color: #eee;
+    border: 1px solid #eee;
+    border-radius: 15px;
+  }
+`;

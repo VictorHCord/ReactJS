@@ -50,7 +50,9 @@ export default class Main extends Component {
       }
       const response = await api.get(`/repos/${newRepo}`);
 
-      const verifyHepo = repositories.find(r => r.name === newRepo);
+      const verifyHepo = repositories.find(
+        r => r.name.toLowerCase() === newRepo.toLowerCase()
+      );
 
       if (verifyHepo) throw new Error('Repositório duplicado');
       const data = {
@@ -65,7 +67,7 @@ export default class Main extends Component {
     } catch (error) {
       this.setState({ error: true });
     } finally {
-      this.setState({ loading: true });
+      this.setState({ loading: false });
     }
   };
 
