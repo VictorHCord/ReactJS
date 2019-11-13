@@ -23,9 +23,3 @@ todas as libs do projeto
 yarn ou npm install
 ```
 
-
-## 📅 Entrega
-Resolvi fazer o CSS do meu estilo, mas tentei manter o maximo o que foi solicitado no projeto
-<span align="center">
-  <img src="https://uploaddeimagens.com.br/images/002/487/985/original/projeto.png?1573100550" alt="Projeto Rocketseat" />
-</span>
