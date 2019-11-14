@@ -23,3 +23,15 @@ todas as libs do projeto
 yarn ou npm install
 ```
 
+### Como utilizar este projeto ?
+
+<ul>
+<li>Webpack</li>
+<li>Babel</li>
+<li>Webpack Dev Server</li>
+<li>ReactJS.</li>
+</ul>
+
+## 📅 Entrega
+
+- No caso eu quis usar o theme do Dracula, ficou bem mais bonito.
