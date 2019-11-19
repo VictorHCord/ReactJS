@@ -23,7 +23,7 @@ todas as libs do projeto
 yarn ou npm install
 ```
 
-### Como utilizar este projeto ?
+### Ferramentas ?
 
 <ul>
 <li>Webpack</li>
